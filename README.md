@@ -1,7 +1,6 @@
 # AR Interior Design App for Android
 
-![](https://i.imgur.com/DNF4uTv.png =210x400)
-![](https://i.imgur.com/lqvbQba.png =210x400)
+![](https://i.imgur.com/DNF4uTv.png) ![](https://i.imgur.com/lqvbQba.png)
 
 ## Project description
 
