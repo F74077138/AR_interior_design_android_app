@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+    defaultConfig {
+        applicationId "com.example.ar_app"
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    implementation 'com.google.ar.sceneform.ux:sceneform-ux:1.15.0'
+    implementation 'com.google.ar.sceneform:assets:1.15.0'
+    implementation 'com.google.ar:core:1.15.0'
+
+    //implementation 'com.google.android.gms:play-services-location:15.0.0'
+}
+
+
+
+
+sceneform.asset('sampledata/models/bed1.obj',
+        'default',
+        'sampledata/models/bed1.sfa',
+        'src/main/res/raw/bed1')
+
+sceneform.asset('sampledata/models/chair1.obj',
+        'default',
+        'sampledata/models/chair1.sfa',
+        'src/main/res/raw/chair1')
+
+sceneform.asset('sampledata/models/chair2.obj',
+        'default',
+        'sampledata/models/chair2.sfa',
+        'src/main/res/raw/chair2')
+
+sceneform.asset('sampledata/models/couch2.obj',
+        'default',
+        'sampledata/models/couch2.sfa',
+        'src/main/res/raw/couch2')
+
+sceneform.asset('sampledata/models/credenza.obj',
+        'default',
+        'sampledata/models/credenza.sfa',
+        'src/main/res/raw/credenza')
+
+sceneform.asset('sampledata/models/lamp1.obj',
+        'default',
+        'sampledata/models/lamp1.sfa',
+        'src/main/res/raw/lamp1')
+
+sceneform.asset('sampledata/models/ottoman.obj',
+        'default',
+        'sampledata/models/ottoman.sfa',
+        'src/main/res/raw/ottoman')
+
+sceneform.asset('sampledata/models/piano2.obj',
+        'default',
+        'sampledata/models/piano2.sfa',
+        'src/main/res/raw/piano2')
+
+sceneform.asset('sampledata/models/table2.obj',
+        'default',
+        'sampledata/models/table2.sfa',
+        'src/main/res/raw/table2')

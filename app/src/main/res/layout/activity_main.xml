@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <fragment
+        android:id="@+id/ar_fragment"
+        android:name="com.google.ar.sceneform.ux.ArFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/removeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMOVE"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:background="@drawable/round_btn"
+        android:padding="15dp"
+        android:layout_margin="10dp"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bedBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bed"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/chair1Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chair #1"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/chair2Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chair #2"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/couchBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Couch"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/credenzaBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credenza"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/lampBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lamp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/ottomanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ottoman"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/pianoBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Piano"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+            <Button
+                android:id="@+id/tableBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:background="@drawable/round_btn"
+                />
+
+        </LinearLayout>
+
+</HorizontalScrollView>
+
+</FrameLayout>
